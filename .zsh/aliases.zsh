@@ -34,8 +34,8 @@ alias grh='git reset HEAD'
 alias grhh='git reset HEAD --hard'
 
 function current_branch() {
-  ref=$(git symbolic-ref HEAD 2> /dev/null) || \
-  ref=$(git rev-parse --short HEAD 2> /dev/null) || return
+  ref=$(git symbolic-ref HEAD 2>/dev/null) || \
+  ref=$(git rev-parse --short HEAD 2>/dev/null) || return
   echo ${ref#refs/heads/}
 }
 
@@ -44,3 +44,9 @@ alias ggpull='git pull origin $(current_branch)'
 compdef ggpull=git
 alias ggpush='git push origin $(current_branch)'
 compdef ggpush=git
+
+
+
+export TODOTXT_DEFAULT_ACTION=ls
+alias todo='/usr/local/bin/todo.sh -c -d ~/.todo/config'
+alias t='/usr/local/bin/todo.sh -c -d ~/.todo/config'

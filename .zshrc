@@ -1,6 +1,7 @@
-autoload -U compinit promptinit
+setopt PROMPT_SUBST
+
+autoload -U compinit
 compinit
-promptinit
 
 export ZSH=$HOME/.zsh
 
