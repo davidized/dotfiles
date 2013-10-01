@@ -79,13 +79,20 @@ echo "";
   fi
 }
 
+export VIRTUAL_ENV_DISABLE_PROMPT='1'
+
+function virtualenv_info() {
+    [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') ';
+}
+
 # user@host in directory on branch
 # virtualenv [0] $
 export PROMPT='%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_color%} in %{$fg_bold[green]%}%~%{$reset_color%}$(git_prompt_info)
-%(?,,%{${fg_bold[white]}%}[%?]%{$reset_color%} )$(prompt_char) '
+%{$fg[white]%}$(virtualenv_info)%{$reset_color%}%(?,,%{${fg_bold[white]}%}[%?]%{$reset_color%} )$(prompt_char) '
 
 set_prompt () {
-  export RPROMPT="$(notes_prompt @TODO) %{$fg_bold[yellow]%}$(notes_prompt @HACK)%{$reset_color%} %{$fg_bold[red]%}$(notes_prompt @FIXME)%{$reset_color%} %{$fg_bold[white]%}$(todo_prompt +next)%{$reset_color%}"
+  #export RPROMPT="$(notes_prompt @TODO) %{$fg_bold[yellow]%}$(notes_prompt @HACK)%{$reset_color%} %{$fg_bold[red]%}$(notes_prompt @FIXME)%{$reset_color%} %{$fg_bold[white]%}$(todo_prompt +next)%{$reset_color%}"
+  export RPROMPT="%{$fg_bold[white]%}$(todo_prompt +next)%{$reset_color%}"
 }
 
 precmd() {
