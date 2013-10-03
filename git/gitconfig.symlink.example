@@ -1,0 +1,10 @@
+[user]
+        name = AUTHORNAME
+        email = AUTHOREMAIL
+[credential]
+        helper = GIT_CREDENTIAL_HELPER
+[alias]
+        co = checkout
+[core]
+        excludesfile = ~/.gitignore
+        editor = vim

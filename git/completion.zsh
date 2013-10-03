@@ -1,0 +1,13 @@
+compdef g=git
+compdef _git gst=git-status
+compdef _git gc=git-commit
+compdef _git gc!=git-commit
+compdef _git gca=git-commit
+compdef _git gca!=git-commit
+compdef _git gcmsg='git commit -v -m'
+compdef _git gco=git-checkout
+compdef _git gb=git-branch
+compdef _git ga=git-add
+compdef _git gm=git-merge
+compdef ggpull=git
+compdef ggpush=git

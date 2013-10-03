@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd ~/
+cd $HOME
 
 # Yearly archives (last year and this year)
 ln -s ~/Dropbox/2012 ~/2012
