@@ -1,1 +1,3 @@
 git/gitconfig.symlink
+ssh/known_hosts
+ssh/authorized_keys
