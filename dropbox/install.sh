@@ -2,9 +2,8 @@
 
 cd $HOME
 
-# Yearly archives (last year and this year)
-ln -s ~/Dropbox/2012 ~/2012
-ln -s ~/Dropbox/2013 ~/2013
+# Yearly archive
+ln -s ~/Dropbox/2014 ~/2014
 
 ln -s ~/Dropbox/Hobbies ~/Hobbies
 ln -s ~/Dropbox/Projects ~/Projects
