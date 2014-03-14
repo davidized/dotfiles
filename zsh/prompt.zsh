@@ -6,7 +6,7 @@ autoload -U colors && colors
 #local return_status="%{$fg[red]%}%(?..✘)%{$reset_color%}"
 #RPROMPT="${return_status}%{$reset_color%}"
 
-ZSH_THEME_GIT_PROMPT_PREFIX=" on %{$fg[cyan]%}"
+ZSH_THEME_GIT_PROMPT_PREFIX=" on %{$fg[green]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}✗"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}✔"
@@ -87,7 +87,7 @@ function virtualenv_info() {
 
 # user@host in directory on branch
 # virtualenv [0] $
-export PROMPT='%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_color%} in %{$fg_bold[green]%}%~%{$reset_color%}$(git_prompt_info)
+export PROMPT='%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_color%} in %{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info)
 %{$fg[white]%}$(virtualenv_info)%{$reset_color%}%(?,,%{${fg_bold[white]}%}[%?]%{$reset_color%} )$(prompt_char) '
 
 set_prompt () {
