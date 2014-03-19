@@ -92,7 +92,7 @@ export PROMPT='%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_colo
 
 set_prompt () {
   #export RPROMPT="$(notes_prompt @TODO) %{$fg_bold[yellow]%}$(notes_prompt @HACK)%{$reset_color%} %{$fg_bold[red]%}$(notes_prompt @FIXME)%{$reset_color%} %{$fg_bold[white]%}$(todo_prompt +next)%{$reset_color%}"
-  export RPROMPT="%{$fg_bold[white]%}$(todo_prompt +next)%{$reset_color%}"
+  #export RPROMPT="%{$fg_bold[white]%}$(todo_prompt +next)%{$reset_color%}"
 }
 
 precmd() {

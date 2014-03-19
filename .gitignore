@@ -1,3 +1,6 @@
 git/gitconfig.symlink
 ssh/known_hosts
 ssh/authorized_keys
+
+sublimetext3/Packages/User/Package Control.cache/
+sublimetext3/Packages/User/Package Control.last-run
