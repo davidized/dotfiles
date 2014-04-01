@@ -8,7 +8,7 @@ if [[ "$DOTFILES" == "" ]] ; then
   export DOTFILES=$HOME/.dotfiles
 fi
 
-export PATH=$PATH:$HOME/bin/git
-export EDITOR="$HOME/bin/mate -w"
+export PATH=$PATH:$HOME/.bin
+export EDITOR="$HOME/.bin/mate -w"
 export TM_SUPPORT_PATH='/Applications/TextMate.app/Contents/SharedSupport/Support'
 
