@@ -6,11 +6,12 @@ execute pathogen#infect()
 colorscheme solarized		" Solarized color scheme
 syntax enable			" Syntax highlighting
 
+filetype plugin indent on
+
 set number			" Show line numbers
 set laststatus=2		" Show a status bar all the time
 set showmatch			" highlight matching [{()}]
 set autoread			" reload files changed oustide of vim
-set tabstop=4			" Change tab width to 4 spaces 
 set backspace=indent,eol,start
 
 if has('gui_running')
