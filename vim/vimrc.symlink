@@ -12,6 +12,7 @@ set number			" Show line numbers
 set laststatus=2		" Show a status bar all the time
 set showmatch			" highlight matching [{()}]
 set autoread			" reload files changed oustide of vim
+set tabstop=4      " \t is shown as 4 spaces
 set backspace=indent,eol,start
 
 if has('gui_running')
@@ -26,7 +27,7 @@ let g:lightline = {
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'fugitive', 'readonly', 'filename' ] ]
-      \   },      
+      \   },
       \ 'component_function': {
       \   'fugitive': 'MyFugitive',
       \   'readonly': 'MyReadonly',
