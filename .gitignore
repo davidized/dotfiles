@@ -8,3 +8,4 @@ sublimetext3/Packages/User/Package Control.last-run
 atom/storage
 atom/packages
 atom/.node-gyp
+atom/compile-cache
