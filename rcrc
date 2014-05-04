@@ -1,0 +1,4 @@
+DOTFILES_DIRS="$HOME/.dotfiles"
+EXCLUDES="README.md script utils bin"
+TAGS=""
+SYMLINK_DIRS="zsh vim"

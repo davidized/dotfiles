@@ -1,11 +1,5 @@
 autoload -U colors && colors
 
-# PROMPT="%{$fg[magenta]%}%n%{$reset_color%} at %{$fg[yellow]%}$(box_name)%{$reset_color%} in %{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}$(git_prompt_info)
-# $(virtualenv_info)%(?,,%{${fg_bold[white]}%}[%?]%{$reset_color%} )$ "
-
-#local return_status="%{$fg[red]%}%(?..✘)%{$reset_color%}"
-#RPROMPT="${return_status}%{$reset_color%}"
-
 ZSH_THEME_GIT_PROMPT_PREFIX=" on %{$fg[green]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}✗"
@@ -31,54 +25,6 @@ function prompt_char {
     echo '%(!,#,$)'
 }
 
-# This keeps the number of todos always available the right hand side of my
-# command line. I filter it to only count those tagged as "+next", so it's more
-# of a motivation to clear out the list.
-todo_count(){
-  if $(which todo &> /dev/null) 
-  then
-    num=$(echo $(todo ls $1 | wc -l))
-
-    let todos=num-2
-    if [[ $todos != 0 ]] then
-      echo "$todos"
-    else
-      echo "0"
-    fi
-
-  else
-      echo ""
-  fi
-}
-
-function todo_prompt() {
-  local COUNT=$(todo_count $1);
-  if [[ $COUNT != 0 ]] 
-  then
-    echo "$1: $COUNT";
-  else
-    echo "";
-  fi
-}
-
-function notes_count() {
-  if [[ -z $1 ]]; then
-local NOTES_PATTERN="@TODO|@FIXME|@HACK";
-  else
-local NOTES_PATTERN=$1;
-  fi
-grep -ERn "\b($NOTES_PATTERN)\b" {app,config,lib,spec,test,notes} 2>/dev/null | wc -l | sed 's/ //g'
-}
-
-function notes_prompt() {
-  local COUNT=$(notes_count $1);
-  if [ $COUNT != 0 ]; then
-echo "$1: $COUNT";
-  else
-echo "";
-  fi
-}
-
 export VIRTUAL_ENV_DISABLE_PROMPT='1'
 
 function virtualenv_info() {
@@ -89,12 +35,3 @@ function virtualenv_info() {
 # virtualenv [0] $
 export PROMPT='%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_color%} in %{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info)
 %{$fg[white]%}$(virtualenv_info)%{$reset_color%}%(?,,%{${fg_bold[white]}%}[%?]%{$reset_color%} )$(prompt_char) '
-
-set_prompt () {
-  #export RPROMPT="$(notes_prompt @TODO) %{$fg_bold[yellow]%}$(notes_prompt @HACK)%{$reset_color%} %{$fg_bold[red]%}$(notes_prompt @FIXME)%{$reset_color%} %{$fg_bold[white]%}$(todo_prompt +next)%{$reset_color%}"
-  #export RPROMPT="%{$fg_bold[white]%}$(todo_prompt +next)%{$reset_color%}"
-}
-
-precmd() {
-  set_prompt
-}
