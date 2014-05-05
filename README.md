@@ -12,6 +12,7 @@
   - Would be nice to rework the zsh prompt so that it only included git or rbenv
   components when those tags are installed
   - OR some kind of dependency system for tags
+* [x] Add SSH config to host-uranium
 
 ## Resources
 The following articles and repositories have provided ideas and code that have come in handy as I've created my dotfiles.
