@@ -17,6 +17,9 @@
   both with ssh and when git tries to use them so I'm keeping ssh config in the
   .secret directory for now.
 
+## Other Notes
+The history for this repo is a bit wonky as I removed some sensitive files from it before putting it up on github. As a result the commit messages may reference files or changes that no longer exist.
+
 ## Resources
 The following articles and repositories have provided ideas and code that have come in handy as I've created my dotfiles.
 
