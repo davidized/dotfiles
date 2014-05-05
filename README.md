@@ -4,8 +4,14 @@
 
 
 ## Todo
-* [ ] Git aliasas could use some work
-* [ ] gnupg - Symlink ~/.gnupg to ~/.secret/gnupg
+* [ ] scripts directories - need to determine how I want things set up/how to run them
+  - I'm thinking something like scripts/osx.install.sh and having an install.sh which
+  runs each of the *.install.sh scripts in the folder. The individual install files come
+  from the tags/hosts which are installed initially
+  - I would like to be able to create individual Brewfiles for each tag
+  - Would be nice to rework the zsh prompt so that it only included git or rbenv
+  components when those tags are installed
+  - OR some kind of dependency system for tags
 
 ## Resources
 The following articles and repositories have provided ideas and code that have come in handy as I've created my dotfiles.
@@ -17,3 +23,8 @@ The following articles and repositories have provided ideas and code that have c
 * (ze-best-zsh-config)[https://github.com/spicycode/ze-best-zsh-config]
 * (zshuery)[https://github.com/myfreeweb/zshuery]
 * (skwp/dotfiles)[https://github.com/skwp/dotfiles]
+
+* (RCM)[https://github.com/thoughtbot/rcm]
+* (thoughtbot/dotfiles)[https://github.com/thoughtbot/dotfiles]
+* (tsigo/dotfiles)[https://github.com/tsigo/dotfiles-rcm]
+* (lackac/dotfiles)[https://github.com/lackac/dotfiles]

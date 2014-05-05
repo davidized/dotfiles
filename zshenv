@@ -1,22 +1,29 @@
+export ZSH=$HOME/.zsh
+
+
+if [[ "$DOTFILES" == "" ]] ; then
+	export DOTFILES=$HOME/.dotfiles
+fi
+
+# Clear PATH and reset it
 if [ -x /usr/libexec/path_helper ]; then
 	PATH=""
 	eval `/usr/libexec/path_helper -s`
 fi
 
-if [[ "$DOTFILES" == "" ]] ; then
-  export DOTFILES=$HOME/.dotfiles
-fi
+export PATH="$PATH:$HOME/.bin"
 
-# homebrew
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/.bin
+# all of our zsh files
+typeset -U env_config_files
+env_config_files=($ZSH/**/*.zshenv)
 
-# rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
+# load the path files
+for file in $env_config_files
+do
+  source $file
+done
 
-#gnupg
-export GNUPGHOME=$HOME/.secret/gnupg
+unset env_config_files
 
-# HISTORY
-HISTSIZE=3000
-SAVEHIST=3000
-HISTFILE=~/.zsh_history
+# Local config
+[[ -f ~/.zshenv.local ]] && source ~/.zshenv.local

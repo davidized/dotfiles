@@ -1,8 +1,6 @@
 [user]
 	name = David Williamson
 	email = david@davidized.com
-[credential]
-  helper = osxkeychain
 [alias]
   co = checkout
 [core]

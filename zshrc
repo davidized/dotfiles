@@ -1,7 +1,5 @@
 setopt PROMPT_SUBST
 
-export ZSH=$DOTFILES
-
 source $DOTFILES/zsh/prompt.zsh
 
 # load our own completion functions
@@ -16,13 +14,22 @@ for function in ~/.zsh/functions/*; do
   source $function
 done
 
-export EDITOR=vim
+# HISTORY
+HISTSIZE=3000
+SAVEHIST=3000
+HISTFILE=~/.zsh_history
 
-# if rbenv is present, configure it for use
-if which rbenv &> /dev/null; then
-  # enable shims and auto-completion
-  eval "$(rbenv init -)"
-fi
+# all of our zsh files
+typeset -U config_files
+config_files=($ZSH/**/*.zshrc)
+
+# load the path files
+for file in $config_files
+do
+  source $file
+done
+
+unset config_files
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases

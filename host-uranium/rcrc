@@ -1,0 +1,4 @@
+DOTFILES_DIRS="$HOME/.dotfiles"
+EXCLUDES="README.md utils bin"
+TAGS="osx gpg git ruby vim"
+SYMLINK_DIRS="vim scripts"

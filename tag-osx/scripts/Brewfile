@@ -2,6 +2,7 @@ install dnsmasq
 install gnupg2
 install macvim
 install mercurial
+install git
 
 install mysql
 services start mysql
@@ -13,6 +14,7 @@ install ruby-build
 install vim
 install zsh
 
+tap caskroom/homebrew-cask
 install brew-cask
 
 tap thoughtbot/formulae
@@ -23,5 +25,3 @@ tap homebrew/science
 
 tap josegonzalez/php
 install php55
-
-tap phinze/cask

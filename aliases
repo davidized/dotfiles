@@ -4,28 +4,17 @@ alias lsl='ls -l -G'
 alias lsal='ls -a -l -G'
 alias lsla='ls -a -l -G'
 
-alias flushdns='sudo killall -HUP mDNSResponder'
+# all of our alias files
+typeset -U alias_config_files
+alias_config_files=($ZSH/**/*.aliases)
 
-alias gpg=gpg2
+# load the alias files
+for file in $alias_config_files
+do
+  source $file
+done
 
-# git aliases
-alias g='git'
-alias gst='git status'
-alias gc='git commit -v'
-alias gc!='git commit -v --amend'
-alias gca='git commit -v -a'
-alias gca!='git commit -v -a --amend'
-alias gcmsg='git commit -v -m'
-alias gco='git checkout'
-alias gcom='git checkout master'
-alias gb='git branch'
-alias ga='git add'
-alias gm='git merge'
-alias grh='git reset HEAD'
-alias grhh='git reset HEAD --hard'
-alias grm='git rm'
-alias ggpull='git pull origin $(git_current_branch)'
-alias ggpush='git push origin $(git_current_branch)'
+unset alias_config_files
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local

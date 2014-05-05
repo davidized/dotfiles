@@ -4,9 +4,9 @@
 [submodule "tag-vim/vim/bundle/vim-fugitive"]
 	path = tag-vim/vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "tag-vim/vim/bundle/lightline.vim"]
-	path = tag-vim/vim/bundle/lightline.vim
-	url = https://github.com/itchyny/lightline.vim.git
 [submodule "tag-vim/vim/bundle/vim-colors-solarized"]
 	path = tag-vim/vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "tag-vim/vim/bundle/vim-lightline"]
+	path = tag-vim/vim/bundle/vim-lightline
+	url = https://github.com/itchyny/lightline.vim.git

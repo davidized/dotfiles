@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+#
+# Run all dotfiles installers.
+
+set -e
+
+cd $DOTFILES
+
+link_directories() {
+  # params: link to, link from
+  if [ ! -h $1 ] # Destination isn't already a symlink
+    then
+    if [ -d $1 ] # Destination is a directory
+      then
+      mv $1 $1.backup
+    fi
+    ln -s $2 $1
+}
+
+link_directories $HOME/Downloads/ToRead $DROPBOX/ToRead
+
+
+if [ ! -h $HOME/Downloads/ToRead ]
+  then
+  if [ -d $HOME/Downloads/ToRead ]
+    then
+    mv $HOME/Downloads/ToRead $HOME/backups/ToRead
+  fi
+
+  ln -s $HOME/Dropbox/ToRead $HOME/Downloads/ToRead
+fi
+
+ln -s ~/.secret/gnupg ~/.gnupg
+
+# Yearly archive
+ln -s ~/ownCloud/2014 ~/2014
+
+ln -s ~/ownCloud/Hobbies ~/Hobbies
+ln -s ~/ownCloud/Projects ~/Projects
+
+if [ ! -h $HOME/.ssh ]
+then
+  if [ -d $HOME/.ssh ]
+  then
+    mv $HOME/.ssh $HOME/backups/ssh
+  fi
+
+  ln -s $DOTFILES/ssh $HOME/.ssh
+fi
+
+cd $HOME
