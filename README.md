@@ -13,6 +13,9 @@
   components when those tags are installed
   - OR some kind of dependency system for tags
 * [x] Add SSH config to host-uranium
+  - I can't find a good way to maintain multiple ssh config files that will work
+  both with ssh and when git tries to use them so I'm keeping ssh config in the
+  .secret directory for now.
 
 ## Resources
 The following articles and repositories have provided ideas and code that have come in handy as I've created my dotfiles.
