@@ -12,6 +12,8 @@
   - Would be nice to rework the zsh prompt so that it only included git or rbenv
   components when those tags are installed
   - OR some kind of dependency system for tags
+  - Hosts can have install.sh, tags should have tag.install.sh. Host install.sh will
+  run the tag.install.sh files.
 * [x] Add SSH config to host-uranium
   - I can't find a good way to maintain multiple ssh config files that will work
   both with ssh and when git tries to use them so I'm keeping ssh config in the
