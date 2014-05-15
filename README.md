@@ -4,24 +4,16 @@ The dotfiles (and a few other random helpful files) I currently have on my compu
 I consider this a work in progress and I try to keep things as up to date as possible as I install or remove tools. That being said, please use anything in this repository at your own risk. Especially the install scripts as I don't actually use them all that much myself and am not 100% sure they're safe to run without screwing up your stuff.
 
 ## Setup
-* My dotfiles live in ~/.dotfiles with some of my more sensitive items living in ~/.secret (ssh, gpg, etc). These are then either symlinked into their original locations or settings are changed so the programs look in the correct place.
-* I have begun using [RCM](https://github.com/thoughtbot/rcm) to manage my dotfiles which has been a bit of a pain to migrate to, but so far has made things more organized and (theoretically) easier to install and share.
+* My dotfiles live in ~/.dotfiles with some of my more sensitive items living in ~/.secret (ssh, gpg, etc).
+* I'm using [RCM](https://github.com/thoughtbot/rcm) to manage my dotfiles which has been a bit of a pain to migrate to, but so far has made things more organized and (theoretically) easier to install and share.
+* If you're on OS X you can adapt the host-uranium/scripts/install.sh to your purposes. (Use at your own risk - I haven't done a whole lot of testing on this)
 
 ## Todo
-* [ ] scripts directories - need to determine how I want things set up/how to run them
-  - I'm thinking something like scripts/osx.install.sh and having an install.sh which
-  runs each of the *.install.sh scripts in the folder. The individual install files come
-  from the tags/hosts which are installed initially
-  - I would like to be able to create individual Brewfiles for each tag
-  - Would be nice to rework the zsh prompt so that it only included git or rbenv
-  components when those tags are installed
-  - OR some kind of dependency system for tags (run rcup -t in the install scripts??)
-  - Hosts can have install.sh, tags should have tag.install.sh. Host install.sh will
-  run the tag.install.sh files.
-* [x] Add SSH config to host-uranium
-  - I can't find a good way to maintain multiple ssh config files that will work
-  both with ssh and when git tries to use them so I'm keeping ssh config in the
-  .secret directory for now.
+* [x] scripts directories - need to determine how I want things set up/how to run them
+* [x] Update .secret directory to also use rcm. Include directory structure in .dotfiles directory for reference.
+  - This is mostly complete, but still needs some tweaking
+* [ ] Create tag-python
+* [ ] install.sh should pull in preferred ruby version from tag-ruby/rbenv/version automatically
 
 ## Other Notes
 The history for this repo is a bit wonky as I removed some sensitive files from it before putting it up on github. As a result the commit messages may reference files or changes that no longer exist.
