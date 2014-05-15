@@ -1,0 +1,7 @@
+install zsh
+install git
+
+tap thoughtbot/formulae
+install rcm
+
+install python

@@ -1,0 +1,36 @@
+# Web development
+install dnsmasq
+install mysql
+services start mysql
+tap josegonzalez/php
+install php55
+
+# Caskroom
+tap caskroom/homebrew-cask
+install brew-cask
+
+# Casks
+cask install atom
+cask install skim
+cask install flux
+# dropbox
+# owncloud
+# firefox
+# postbox
+# 1password
+# arq
+# alfred
+# dash
+# scrivener
+# github
+# adium
+# google chrome
+# xquartz
+# steam
+# netnewswire
+# vlc
+# sequel-pro
+# virtualbox
+
+# Other taps
+tap homebrew/science

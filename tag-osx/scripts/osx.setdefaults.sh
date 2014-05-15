@@ -36,4 +36,4 @@ for app in "Finder"; do
 	killall "$app" > /dev/null 2>&1
 done
 
-echo "Done. Note that some of these changes require a logout/restart to take effect."
+echo "Tag OSX: Set defaults. Done. Note that some of these changes require a logout/restart to take effect."

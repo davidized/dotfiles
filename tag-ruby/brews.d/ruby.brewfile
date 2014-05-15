@@ -1,0 +1,6 @@
+install rbenv
+install ruby-build
+
+# rbenv plugins
+install rbenv-default-gems
+install rbenv-gem-rehash
