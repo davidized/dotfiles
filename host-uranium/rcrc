@@ -1,4 +1,4 @@
 DOTFILES_DIRS="$HOME/.dotfiles $HOME/.secret"
-EXCLUDES="README.md utils"
+EXCLUDES="README.md brews.d utils"
 TAGS="gpg git ruby vim osx"
 SYMLINK_DIRS="vim"
