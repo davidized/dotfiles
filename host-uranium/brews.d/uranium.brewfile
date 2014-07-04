@@ -31,6 +31,20 @@ cask install flux
 # vlc
 # sequel-pro
 # virtualbox
+# flash
+# libreoffice
+# nvalt
+# rcdefaultapp
+# remote-desktop-connection
+# silverlight
+
+
+# TeX Casks
+cask install basictex
+cask install texshop
+cask install tex-live-utility
+cask install bibdesk
+cask install latexit
 
 # Other taps
 tap homebrew/science
