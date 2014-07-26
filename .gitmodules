@@ -10,3 +10,9 @@
 [submodule "tag-vim/vim/bundle/vim-lightline"]
 	path = tag-vim/vim/bundle/vim-lightline
 	url = https://github.com/itchyny/lightline.vim.git
+[submodule "tag-ruby/rbenv/plugins/rbenv-default-gems"]
+	path = tag-ruby/rbenv/plugins/rbenv-default-gems
+	url = https://github.com/sstephenson/rbenv-default-gems.git
+[submodule "utils/solarized"]
+	path = utils/solarized
+	url = https://github.com/altercation/solarized.git
