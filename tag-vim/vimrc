@@ -1,3 +1,6 @@
+scriptencoding utf-8
+set encoding=utf-8
+
 set nocompatible
 
 runtime bundle/vim-pathogen/autoload/pathogen.vim
@@ -17,7 +20,6 @@ set backspace=indent,eol,start
 
 if has('gui_running')
     set background=light
-    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline
 else
     set background=dark
 endif
@@ -32,23 +34,25 @@ let g:lightline = {
       \   'fugitive': 'MyFugitive',
       \   'readonly': 'MyReadonly',
       \   },
-      \ 'separator': { 'left': "", 'right': '' },
-      \ 'subseparator': { 'left': "", 'right': '' }
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '|', 'right': '|' }
       \ }
+
+set noshowmode
 
 function! MyFugitive()
   if exists("*fugitive#head")
     let _ = fugitive#head()
-    return strlen(_) ? ' '._ : ''
+    return strlen(_) ? _ : ''
   endif
   return ''
 endfunction
 
 function! MyReadonly()
   if &filetype == "help"
-    return ""
+    return "?"
   elseif &readonly
-    return ""
+    return "x"
   else
     return ""
   endif
