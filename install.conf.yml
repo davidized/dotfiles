@@ -4,8 +4,6 @@
     ~/.aliases: aliases
     ~/.dotfiles: ''
     ~/.gitconfig: gitconfig
-    ~/.gitconfig.local: gitconfig.local
-    ~/.gitignore_global: gitignore_global
     ~/.rbenv: rbenv/
     ~/.rspec: rspec
     ~/.vim: vim/
@@ -14,6 +12,8 @@
     ~/.zshenv: zshenv
     ~/.zshrc: zshrc
     ~/.aliases.local: uranium.local/aliases.local
+    ~/.gitconfig.local: uranium.local/gitconfig.local
+    ~/.gitignore_global: uranium.local/gitignore_global
     ~/.zshenv.local: uranium.local/zshenv.local
 
 - shell:
