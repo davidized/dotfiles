@@ -13,31 +13,43 @@ install brew-cask
 cask install atom
 cask install skim
 cask install flux
-# dropbox
-# owncloud
-# firefox
-# postbox
-# 1password
-# arq
-# alfred
+cask install dropbox
+cask install owncloud
+cask install firefox
+cask install postbox
+cask install 1password
+cask install arq
+cask install alfred
 # dash
-# scrivener
-# github
-# adium
+cask install scrivener
+cask install github
+cask install adium
 # google chrome
 # xquartz
-# steam
+cask install steam
 # netnewswire
-# vlc
+cask install vlc
 # sequel-pro
-# virtualbox
-# flash
+cask install virtualbox
+cask install flash
 # libreoffice
 # nvalt
 # rcdefaultapp
 # remote-desktop-connection
-# silverlight
+cask install silverlight
 
+# GPG
+install gnupg2
+
+# Ruby
+install rbenv
+install ruby-build
+# rbenv plugins
+install rbenv-default-gems
+install rbenv-gem-rehash
+
+# Vim
+install vim
 
 # TeX Casks
 cask install basictex
@@ -48,3 +60,8 @@ cask install latexit
 
 # Other taps
 tap homebrew/science
+
+# OSX
+install zsh
+install git
+install python

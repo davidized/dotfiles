@@ -13,6 +13,8 @@
     ~/.zsh: zsh/
     ~/.zshenv: zshenv
     ~/.zshrc: zshrc
+    ~/.aliases.local: uranium.local/aliases.local
+    ~/.zshenv.local: uranium.local/zshenv.local
 
 - shell:
   -
