@@ -1,0 +1,4 @@
+# OSX Aliases
+# alias flushdns='dscacheutil -flushcache' #OSX 10.9
+alias flushdns='sudo discoveryutil udnsflushcaches' #OSX 10.10
+alias cask='brew cask'

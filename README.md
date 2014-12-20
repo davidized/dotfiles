@@ -5,15 +5,11 @@ I consider this a work in progress and I try to keep things as up to date as pos
 
 ## Setup
 * My dotfiles live in ~/.dotfiles with some of my more sensitive items living in ~/.secret (ssh, gpg, etc).
-* I'm using [RCM](https://github.com/thoughtbot/rcm) to manage my dotfiles which has been a bit of a pain to migrate to, but so far has made things more organized and (theoretically) easier to install and share.
-* If you're on OS X you can adapt the host-uranium/scripts/install.sh to your purposes. (Use at your own risk - I haven't done a whole lot of testing on this)
+* Run the ./install script to set everything up.
+
 
 ## Todo
-* [x] scripts directories - need to determine how I want things set up/how to run them
-* [x] Update .secret directory to also use rcm. Include directory structure in .dotfiles directory for reference.
-  - This is mostly complete, but still needs some tweaking
-* [ ] Create tag-python
-* [ ] install.sh should pull in preferred ruby version from tag-ruby/rbenv/version automatically
+Moved to [GitHub Issues](https://github.com/davidized/dotfiles/issues)
 
 ## Other Notes
 The history for this repo is a bit wonky as I removed some sensitive files from it before putting it up on github. As a result the commit messages may reference files or changes that no longer exist.
@@ -33,3 +29,6 @@ The following articles and repositories have provided ideas and code that have c
 * [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles)
 * [tsigo/dotfiles](https://github.com/tsigo/dotfiles-rcm)
 * [lackac/dotfiles](https://github.com/lackac/dotfiles)
+
+* [Managing Your Dotfiles](http://www.anishathalye.com/2014/08/03/managing-your-dotfiles/)
+* [anishathalye/dotfiles](https://github.com/anishathalye/dotfiles)

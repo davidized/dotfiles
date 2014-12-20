@@ -19,17 +19,11 @@ HISTSIZE=3000
 SAVEHIST=3000
 HISTFILE=~/.zsh_history
 
-# all of our zsh files
-typeset -U config_files
-config_files=($ZSH/**/*.zshrc)
-
-# load the path files
-for file in $config_files
-do
-  source $file
-done
-
-unset config_files
+# if rbenv is present, configure it for use
+if which rbenv &> /dev/null; then
+  # enable shims and auto-completion
+  eval "$(rbenv init -)"
+fi
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
