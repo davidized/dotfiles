@@ -1,2 +1,2 @@
-ssh/known_hosts
-ssh/authorized_keys
+rbenv/shims/
+rbenv/versions/
