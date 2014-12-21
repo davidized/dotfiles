@@ -26,17 +26,5 @@ alias ggpull='git pull origin $(git_current_branch)'
 alias ggpush='git push origin $(git_current_branch)'
 alias ghpush='git push github $(git_current_branch)'
 
-# all of our alias files
-# typeset -U alias_config_files
-# alias_config_files=($ZSH/**/*.aliases)
-
-# load the alias files
-# for file in $alias_config_files
-# do
-#  source $file
-# done
-
-# unset alias_config_files
-
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
