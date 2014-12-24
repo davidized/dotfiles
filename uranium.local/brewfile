@@ -19,29 +19,29 @@ cask install firefox
 cask install postbox
 cask install 1password
 cask install arq
-cask install alfred
-# dash
+#cask install alfred
+#cask install dash
 cask install scrivener
 cask install github
 cask install adium
-# google chrome
-# xquartz
+#cask install google-chrome
+#cask install xquartz
 cask install steam
-# netnewswire
+#cask install netnewswire
 cask install vlc
-# sequel-pro
+#cask install sequel-pro
 cask install virtualbox
 cask install flash
-# libreoffice
-# nvalt
-# rcdefaultapp
-# remote-desktop-connection
+#cask install libreoffice
+#cask install nvalt
+#cask install rcdefaultapp
+#cask install remote-desktop-connection
 cask install silverlight
 
 # GPG
 install gnupg2
 
-# Ruby
+# Ruby/Rbenv
 install rbenv
 install ruby-build
 # rbenv plugins
