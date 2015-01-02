@@ -20,3 +20,18 @@
   -
     - git submodule update --init --recursive
     - Installing/updating submodules
+  -
+    - ln -sfh ~/ownCloud/Hobbies ~/Hobbies
+    - Linking Hobbies
+  -
+    - ln -sfh ~/ownCloud/Papers ~/Papers
+    - Linking Papers
+  -
+    - ln -sfh ~/Repositories/PersonalWiki ~/PersonalWiki
+    - Linking PersonalWiki
+  -
+    - ln -sfh ~/ownCloud/Projects ~/Projects
+    - Linking Projects
+  -
+    - ln -sfh ~/ownCloud/2015 ~/2015
+    - Linking 2015 folder
