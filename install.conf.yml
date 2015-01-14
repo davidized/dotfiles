@@ -2,6 +2,7 @@
 
 - link:
     ~/.aliases: aliases
+    ~/.atom: atom/
     ~/.config/keybase: keybase/
     ~/.dotfiles: ''
     ~/.gitconfig: gitconfig
@@ -36,3 +37,9 @@
   -
     - ln -sfh ~/SpiderOak\ Hive/2015 ~/2015
     - Linking 2015 folder
+  -
+    - ln -sfh ~/.secret/ssh ~/.ssh
+    - Linking SSH folder
+  -
+    - ln -sfh ~/.secret/gnupg ~/.gnupg
+    - Linking GNUPG folder

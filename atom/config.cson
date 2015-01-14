@@ -1,0 +1,38 @@
+'global':
+  'core':
+    'themes': [
+      'seti-ui'
+      'seti-syntax'
+    ]
+    'disabledPackages': [
+      'archive-view'
+      'git-log'
+      'todo-show'
+      'welcome'
+      'metrics'
+      'open-on-github'
+    ]
+  'exception-reporting':
+    'userId': '94581ec9-9289-13ad-e5f6-5a50686edb07'
+  'welcome':
+    'showOnStartup': false
+  'metrics':
+    'userId': 'b8d965780f7c2187842c20bf48a0bf82c7c6f30b'
+  'editor':
+    'showIndentGuide': true
+    'invisibles': {}
+'.html.php.text':
+  'editor':
+    'tabLength': 4
+'.c.source ++ *':
+  'editor': {}
+'.css.source':
+  'editor': {}
+'.coffee.source':
+  'editor': {}
+'.c.source':
+  'editor': {}
+'.litcoffee.source':
+  'editor': {}
+'.gfm.source':
+  'editor': {}

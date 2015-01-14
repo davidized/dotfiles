@@ -1,3 +1,10 @@
+atom/storage
+atom/compile-cache
+atom/dev
+atom/.npm
+atom/.node-gyp
+atom/packages
+
 keybase/session.json
 keybase/keybase.idb/
 keybase/tmp_keyrings/
