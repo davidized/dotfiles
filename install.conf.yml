@@ -2,6 +2,7 @@
 
 - link:
     ~/.aliases: aliases
+    ~/.config/keybase: keybase/
     ~/.dotfiles: ''
     ~/.gitconfig: gitconfig
     ~/.rbenv: rbenv/
