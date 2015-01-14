@@ -21,17 +21,17 @@
     - git submodule update --init --recursive
     - Installing/updating submodules
   -
-    - ln -sfh ~/ownCloud/Hobbies ~/Hobbies
+    - ln -sfh ~/SpiderOak\ Hive/Hobbies ~/Hobbies
     - Linking Hobbies
   -
-    - ln -sfh ~/ownCloud/Papers ~/Papers
+    - ln -sfh ~/SpiderOak\ Hive/Papers ~/Papers
     - Linking Papers
   -
     - ln -sfh ~/Repositories/PersonalWiki ~/PersonalWiki
     - Linking PersonalWiki
   -
-    - ln -sfh ~/ownCloud/Projects ~/Projects
+    - ln -sfh ~/SpiderOak\ Hive/Projects ~/Projects
     - Linking Projects
   -
-    - ln -sfh ~/ownCloud/2015 ~/2015
+    - ln -sfh ~/SpiderOak\ Hive/2015 ~/2015
     - Linking 2015 folder
