@@ -5,7 +5,7 @@ I consider this a work in progress and I try to keep things as up to date as pos
 
 ## Setup
 * My dotfiles live in ~/.dotfiles with some of my more sensitive items living in ~/.secret (ssh, gpg, etc).
-* Run the ./install script to set everything up.
+* Run ```./install HOSTNAME``` to set everything up.
 
 
 ## Todo
