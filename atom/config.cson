@@ -26,15 +26,3 @@
 ".html.php.text":
   editor:
     tabLength: 4
-".c.source ++ *":
-  editor: {}
-".css.source":
-  editor: {}
-".coffee.source":
-  editor: {}
-".c.source":
-  editor: {}
-".litcoffee.source":
-  editor: {}
-".gfm.source":
-  editor: {}
