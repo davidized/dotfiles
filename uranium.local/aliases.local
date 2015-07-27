@@ -1,4 +1,5 @@
 # OSX Aliases
 # alias flushdns='dscacheutil -flushcache' #OSX 10.9
-alias flushdns='sudo discoveryutil udnsflushcaches' #OSX 10.10
+# alias flushdns='sudo discoveryutil udnsflushcaches' #OSX 10.10 up to 10.10.3
+alias flushdns='sudo killall -HUP mDNSResponder'
 alias cask='brew cask'
