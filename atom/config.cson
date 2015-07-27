@@ -7,12 +7,11 @@
       "welcome"
       "metrics"
       "open-on-github"
-      "docblockr"
       "pretty-json"
     ]
     themes: [
-      "seti-ui"
-      "seti-syntax"
+      "one-dark-ui"
+      "solarized-dark-syntax"
     ]
   "exception-reporting":
     userId: "94581ec9-9289-13ad-e5f6-5a50686edb07"
@@ -23,6 +22,8 @@
   editor:
     showIndentGuide: true
     invisibles: {}
+    softWrapAtPreferredLineLength: true
+  "spell-check": {}
 ".html.php.text":
   editor:
     tabLength: 4
