@@ -3,15 +3,13 @@
     disabledPackages: [
       "archive-view"
       "git-log"
-      "todo-show"
       "welcome"
       "metrics"
       "open-on-github"
-      "pretty-json"
     ]
     themes: [
-      "one-dark-ui"
-      "solarized-dark-syntax"
+      "seti-ui"
+      "seti-syntax"
     ]
   "exception-reporting":
     userId: "94581ec9-9289-13ad-e5f6-5a50686edb07"
@@ -24,6 +22,11 @@
     invisibles: {}
     softWrapAtPreferredLineLength: true
   "spell-check": {}
+  awiki:
+    wikiLocation: "/Users/david/Repositories/PersonalWiki/"
 ".html.php.text":
   editor:
     tabLength: 4
+".source.wiki":
+  editor:
+    softWrap: true
