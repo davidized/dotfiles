@@ -18,11 +18,11 @@ link_directories() {
 }
 
 echo "Host Uranium: Link directories"
-link_directories $HOME/2014              $OWNCLOUD/2014
-link_directories $HOME/Hobbies           $OWNCLOUD/Hobbies
-link_directories $HOME/Projects          $OWNCLOUD/Projects
+link_directories $HOME/2014              $DROPBOX/2014
+link_directories $HOME/Hobbies           $DROPBOX/Hobbies
+link_directories $HOME/Projects          $DROPBOX/Projects
 link_directories $HOME/Downloads/ToRead  $DROPBOX/ToRead
 
-link_directories $HOME/Papers            $OWNCLOUD/Papers
-link_directories $HOME/PersonalWiki      $OWNCLOUD/PersonalWiki
-#link_directories $HOME/.secret/gnupg     $HOME/.gnupg
+link_directories $HOME/Papers            $DROPBOX/Papers
+#link_directories $HOME/PersonalWiki      $DROPBOX/PersonalWiki
+link_directories $HOME/.secret/gnupg     $HOME/.gnupg

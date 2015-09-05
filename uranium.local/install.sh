@@ -44,14 +44,14 @@ bash $HOME/.scripts/osx.setdefaults.
 
 # Tag Ruby
 echo "Host Uranium: Install ruby using rbenv"
-rbenv install 2.1.2
+rbenv install 2.2.3
 # .rbenv/default-gems will be automatically installed
 # @TODO Global ruby version set in ~/.rbenv/version - it would be nice to have
 # the install script pull that out automatically.
 
 ## Install gollum for PersonalWiki
-echo "Host Uranium: Install gollum ruby gem"
-gem install gollum
+#echo "Host Uranium: Install gollum ruby gem"
+#gem install gollum
 
 # Tag Vim
 echo "Host Uranium: Ensure dotfiles submodules are up to date for VIM"
