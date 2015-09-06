@@ -23,23 +23,5 @@
     - git submodule update --init --recursive
     - Installing/updating submodules
   -
-    - ln -sfh ~/SpiderOak\ Hive/Hobbies ~/Hobbies
-    - Linking Hobbies
-  -
-    - ln -sfh ~/SpiderOak\ Hive/Papers ~/Papers
-    - Linking Papers
-  -
-    - ln -sfh ~/Repositories/PersonalWiki ~/PersonalWiki
-    - Linking PersonalWiki
-  -
-    - ln -sfh ~/SpiderOak\ Hive/Projects ~/Projects
-    - Linking Projects
-  -
-    - ln -sfh ~/SpiderOak\ Hive/2015 ~/2015
-    - Linking 2015 folder
-  -
-    - ln -sfh ~/.secret/ssh ~/.ssh
-    - Linking SSH folder
-  -
-    - ln -sfh ~/.secret/gnupg ~/.gnupg
-    - Linking GNUPG folder
+    command: ./uranium.local/linkdirs.sh
+    stdout: true
