@@ -2,6 +2,7 @@
 *~
 *.swp
 *.rbc
+*.pyc
 
 .DS_Store
 .AppleDouble
