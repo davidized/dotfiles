@@ -1,0 +1,6 @@
+export ZSH=$HOME/.zsh
+
+
+if [[ "$DOTFILES" == "" ]] ; then
+	export DOTFILES=$HOME/dotfiles
+fi

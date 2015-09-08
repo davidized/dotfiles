@@ -1,0 +1,16 @@
+- clean: ['~']
+
+- link:
+    ~/.aliases: aliases
+    ~/.gitconfig: gitconfig
+    ~/.rspec: rspec
+    ~/.bash_profile: cpanel.local/bash_profile
+    ~/.bashrc: cpanel.local/bashrc
+    ~/.zsh: zsh/
+    ~/.zshenv: cpanel.local/zshenv
+    ~/.zshrc: zshrc
+
+- shell:
+  -
+    - git submodule update --init --recursive
+    - Installing/updating submodules
