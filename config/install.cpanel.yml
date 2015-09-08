@@ -3,6 +3,7 @@
 - link:
     ~/.aliases: aliases
     ~/.gitconfig: gitconfig
+    ~/.gitignore_global: cpanel.local/gitignore_global
     ~/.rspec: rspec
     ~/.bash_profile: cpanel.local/bash_profile
     ~/.bashrc: cpanel.local/bashrc
