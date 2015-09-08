@@ -30,6 +30,3 @@ fi
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
-
-# added by travis gem
-[ -f /Users/david/.travis/travis.sh ] && source /Users/david/.travis/travis.sh
