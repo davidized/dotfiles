@@ -17,6 +17,7 @@
     ~/.gitconfig.local: uranium.local/gitconfig.local
     ~/.gitignore_global: uranium.local/gitignore_global
     ~/.zshenv.local: uranium.local/zshenv.local
+    ~/.zshrc.local: uranium.local/zshrc.local
 
 - shell:
   -
