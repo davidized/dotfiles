@@ -6,6 +6,10 @@
       "welcome"
       "metrics"
       "open-on-github"
+      "git-control"
+      "todo-show"
+      "pretty-json"
+      "atom-prettify"
     ]
     themes: [
       "seti-ui"
@@ -24,6 +28,11 @@
   "spell-check": {}
   awiki:
     wikiLocation: "/Users/david/Repositories/PersonalWiki/"
+  "php-cs-fixer":
+    showInfoNotifications: true
+    executablePath: "/Users/david/.composer/vendor/bin/php-cs-fixer"
+  "atom-beautify":
+    _analyticsUserId: "98361e35-adbe-47ef-a53d-7e180745b450"
 ".html.php.text":
   editor:
     tabLength: 4
