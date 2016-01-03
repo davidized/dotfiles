@@ -18,7 +18,7 @@ link_directories() {
 }
 
 echo "Host Uranium: Link directories"
-link_directories $HOME/2015              $DROPBOX/2015
+link_directories $HOME/2016              $DROPBOX/2016
 link_directories $HOME/Hobbies           $DROPBOX/Hobbies
 link_directories $HOME/Projects          $DROPBOX/Projects
 link_directories $HOME/Downloads/ToRead  $DROPBOX/ToRead
@@ -26,4 +26,4 @@ link_directories $HOME/Downloads/ToRead  $DROPBOX/ToRead
 link_directories $HOME/Papers            $DROPBOX/Papers
 #link_directories $HOME/PersonalWiki      $DROPBOX/PersonalWiki
 link_directories $HOME/.gnupg            $HOME/.secret/gnupg
-link_directories $HOME/.ssh              $HOME/.secret/ssh     
+link_directories $HOME/.ssh              $HOME/.secret/ssh
