@@ -1,5 +1,5 @@
 # homebrew
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=~/.composer/vendor/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 export EDITOR=vim
 export DROPBOX=$HOME/Dropbox
